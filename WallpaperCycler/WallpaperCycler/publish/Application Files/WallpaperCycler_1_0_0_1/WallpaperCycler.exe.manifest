@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.1" name="WallpaperCycler.exe" publicKeyToken="b8bf8a14392b30ce" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Resources\091098-blue-tiedyed-cloth-icon-signs-fan4.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WallpaperCycler" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="WallpaperCycler.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WallpaperCycler.exe" size="2052608">
+      <assemblyIdentity name="WallpaperCycler" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>87BOodf2OfSYhzqur2exd24ZE/U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\091098-blue-tiedyed-cloth-icon-signs-fan4.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KliPNfRNY+xkQgw2NaTcBc3syxI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=BEI\moeaun" issuerKeyHash="c9d5f97f0cb833fd298fb42e656d06c86e73fb0f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>aHm6oE7rVoz1HFnfhZ0MtMYH6do=</DigestValue></Reference></SignedInfo><SignatureValue>NcvTkj4BLTzqsktkg6IJYIKl+8Z5ZmOuaOihbAhagSciBcbHnCExWseTMNh98G63yLaRT3TFmztHc6et4TxevFAk5C75ym8nMOizJrNgQDBbT78HxN9+EapBbfEDK03fCy4fbz62NtPITIhA++V8B1g5AMG6Xsg2Q3kDZ13so5A=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qY1SF/JuKObiRqVpxyHtVmOKrnEbJhdhcyrb0MgTuRmP5oEGw2IqCc0Cw2OgspjKO4XLFcN1k+D86xUWN8A/1QHTShCjIRKQmxUdU85XE+2ayf9gBeL9BZ3pIU9esgIc/39nXkIpc2YP/duYCwlrifLDvEUJvPe4mI3VKxTva2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="dae907c6b40c9d85df591cf58c56eb4ea0ba7968" Description="" Url=""><as:assemblyIdentity version="1.0.0.1" name="WallpaperCycler.exe" publicKeyToken="b8bf8a14392b30ce" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BEI\moeaun</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>3xGDvMeDhZR/BwxyZE4RLU6X59Y=</DigestValue></Reference></SignedInfo><SignatureValue>Poqo+VViAAc06bFR9qKCUOh5UsG61m1u4vNjypzYCkMVex1YK8/DvLaleN0KUYeVwY6ts4lSjhM2h2g0X5q3+HTYtKIcOZwOkn5mShyno3g3OEg5U9+0tfTjru6piLxqdZ9hWKUZpNnHUQk8Hrwxwg2Uvx5UyKADs9MnehTMvFc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qY1SF/JuKObiRqVpxyHtVmOKrnEbJhdhcyrb0MgTuRmP5oEGw2IqCc0Cw2OgspjKO4XLFcN1k+D86xUWN8A/1QHTShCjIRKQmxUdU85XE+2ayf9gBeL9BZ3pIU9esgIc/39nXkIpc2YP/duYCwlrifLDvEUJvPe4mI3VKxTva2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASagAwIBAgIQT7yVuM2kd61I5wMf+RCYfDAJBgUrDgMCHQUAMB8xHTAbBgNVBAMeFABCAEUASQBcAG0AbwBlAGEAdQBuMB4XDTExMDIxNTA2MTQzNloXDTEyMDIxNTEyMTQzNlowHzEdMBsGA1UEAx4UAEIARQBJAFwAbQBvAGUAYQB1AG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKmNUhfybijm4kalacch7VZjiq5xGyYXYXMq29DIE7kZj+aBBsNiKgnNAsNjoLKYyjuFyxXDdZPg/OsVFjfAP9UB00oQoyESkJsVHVPOVxPtmsn/YAXi/QWd6SFPXrICHP9/Z15CKXNmD/3bmAsJa4nyw7xFCbz3uJiN1SsU72tpAgMBAAEwCQYFKw4DAh0FAAOBgQAa6MFrpJpZWyzZIjFcZYvFVHRRcFe3fnXzVEgraWJkkJvGfDNQPwJ/rDd6qjsIy1x+IK+na+RnxKz78GBXKynDdmAM37dFyx2zCYPE3aTB5wjlOhqBhOpBxodwp62sAkMQP4fPfdgSwF5cVRLhHVDmbnMBTQhIxadMVwXXz8ekmQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
