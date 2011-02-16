@@ -41,13 +41,12 @@
             this.FolderPathBtn = new System.Windows.Forms.Button();
             this.FolderPathTxt = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkCycleTime = new System.Windows.Forms.CheckBox();
             this.ChangeWallpaperBtn = new System.Windows.Forms.Button();
             this.txtCycleTime = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SpecialImageSizeTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.SpecialImageCbox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SmallImageCbox = new System.Windows.Forms.ComboBox();
@@ -131,7 +130,6 @@
             this.SubfolderChk.TabIndex = 2;
             this.SubfolderChk.Text = "Look in Subfolders";
             this.SubfolderChk.UseVisualStyleBackColor = true;
-            this.SubfolderChk.Leave += new System.EventHandler(this.UserDataTxt_TextChanged);
             // 
             // FolderPathBtn
             // 
@@ -156,13 +154,12 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.chkCycleTime);
             this.groupBox2.Controls.Add(this.ChangeWallpaperBtn);
             this.groupBox2.Controls.Add(this.txtCycleTime);
-            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.SpecialImageSizeTxt);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.SpecialImageCbox);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.SmallImageCbox);
@@ -172,16 +169,26 @@
             this.groupBox2.Controls.Add(this.AutoStartupChk);
             this.groupBox2.Location = new System.Drawing.Point(12, 88);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(312, 203);
+            this.groupBox2.Size = new System.Drawing.Size(312, 188);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Settings";
+            // 
+            // chkCycleTime
+            // 
+            this.chkCycleTime.AutoSize = true;
+            this.chkCycleTime.Location = new System.Drawing.Point(11, 125);
+            this.chkCycleTime.Name = "chkCycleTime";
+            this.chkCycleTime.Size = new System.Drawing.Size(182, 17);
+            this.chkCycleTime.TabIndex = 3;
+            this.chkCycleTime.Text = "Change to next Wallpaper Every ";
+            this.chkCycleTime.UseVisualStyleBackColor = true;
             // 
             // ChangeWallpaperBtn
             // 
             this.ChangeWallpaperBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.ChangeWallpaperBtn.Location = new System.Drawing.Point(6, 167);
+            this.ChangeWallpaperBtn.Location = new System.Drawing.Point(6, 152);
             this.ChangeWallpaperBtn.Name = "ChangeWallpaperBtn";
             this.ChangeWallpaperBtn.Size = new System.Drawing.Size(300, 30);
             this.ChangeWallpaperBtn.TabIndex = 3;
@@ -191,29 +198,18 @@
             // 
             // txtCycleTime
             // 
-            this.txtCycleTime.Location = new System.Drawing.Point(175, 123);
+            this.txtCycleTime.Location = new System.Drawing.Point(194, 123);
             this.txtCycleTime.MaxLength = 4;
             this.txtCycleTime.Name = "txtCycleTime";
             this.txtCycleTime.Size = new System.Drawing.Size(42, 20);
             this.txtCycleTime.TabIndex = 15;
             this.txtCycleTime.Text = "128";
             this.txtCycleTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtCycleTime.TextChanged += new System.EventHandler(this.SpecialImageSizeTxt_TextChanged);
-            this.txtCycleTime.Leave += new System.EventHandler(this.UserDataTxt_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(95, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "*(0: Do not change Wallpaper.)";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(223, 126);
+            this.label6.Location = new System.Drawing.Point(242, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 13);
             this.label6.TabIndex = 14;
@@ -228,8 +224,6 @@
             this.SpecialImageSizeTxt.TabIndex = 15;
             this.SpecialImageSizeTxt.Text = "128";
             this.SpecialImageSizeTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.SpecialImageSizeTxt.TextChanged += new System.EventHandler(this.SpecialImageSizeTxt_TextChanged);
-            this.SpecialImageSizeTxt.Leave += new System.EventHandler(this.UserDataTxt_TextChanged);
             // 
             // label4
             // 
@@ -240,28 +234,14 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "px :";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 126);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Change to next Wallpaper Every ";
-            // 
             // SpecialImageCbox
             // 
             this.SpecialImageCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SpecialImageCbox.FormattingEnabled = true;
-            this.SpecialImageCbox.Items.AddRange(new object[] {
-            "Center",
-            "Tile",
-            "Stretch"});
             this.SpecialImageCbox.Location = new System.Drawing.Point(175, 96);
             this.SpecialImageCbox.Name = "SpecialImageCbox";
             this.SpecialImageCbox.Size = new System.Drawing.Size(121, 21);
             this.SpecialImageCbox.TabIndex = 13;
-            this.SpecialImageCbox.Leave += new System.EventHandler(this.UserDataTxt_TextChanged);
             // 
             // label3
             // 
@@ -276,15 +256,10 @@
             // 
             this.SmallImageCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SmallImageCbox.FormattingEnabled = true;
-            this.SmallImageCbox.Items.AddRange(new object[] {
-            "Center",
-            "Tile",
-            "Stretch"});
             this.SmallImageCbox.Location = new System.Drawing.Point(175, 69);
             this.SmallImageCbox.Name = "SmallImageCbox";
             this.SmallImageCbox.Size = new System.Drawing.Size(121, 21);
             this.SmallImageCbox.TabIndex = 10;
-            this.SmallImageCbox.Leave += new System.EventHandler(this.UserDataTxt_TextChanged);
             // 
             // label2
             // 
@@ -299,15 +274,10 @@
             // 
             this.LargeImageCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LargeImageCbox.FormattingEnabled = true;
-            this.LargeImageCbox.Items.AddRange(new object[] {
-            "Center",
-            "Tile",
-            "Stretch"});
             this.LargeImageCbox.Location = new System.Drawing.Point(175, 42);
             this.LargeImageCbox.Name = "LargeImageCbox";
             this.LargeImageCbox.Size = new System.Drawing.Size(121, 21);
             this.LargeImageCbox.TabIndex = 8;
-            this.LargeImageCbox.Leave += new System.EventHandler(this.UserDataTxt_TextChanged);
             // 
             // label1
             // 
@@ -346,7 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 303);
+            this.ClientSize = new System.Drawing.Size(336, 288);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -392,9 +362,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker;
         private System.Windows.Forms.TextBox txtCycleTime;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.CheckBox chkCycleTime;
     }
 }
 

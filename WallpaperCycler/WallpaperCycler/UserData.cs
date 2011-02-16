@@ -44,7 +44,7 @@ namespace WallpaperCycler
         private List<String> lastWallpaperPath;
         private WallpaperStyle LargeImageStyle, SmallImageStyle, SpecialImageStyle;
         private Int32 SpecialImageSize, WallpaperCycleTime;
-        private Boolean WallpaperSubDir;
+        private Boolean WallpaperSubDir, cycleTimeEnabled;
 
         public String WallpaperDirectory
         {
@@ -76,16 +76,45 @@ namespace WallpaperCycler
             set { Int32.TryParse(value, out SpecialImageSize); }
         }
 
-        public String ChangingTime
+        public String ChangingTimeString
         {
-            get { return WallpaperCycleTime.ToString(); }
-            set { Int32.TryParse(value, out WallpaperCycleTime); }
+            get 
+            {
+                Int32 iTime = WallpaperCycleTime / 1000 / 60; // To convert to Min
+                return iTime.ToString();
+            }
+            set
+            {
+                Int64 iTime = 0;
+                Int64.TryParse(value, out iTime);
+                iTime *= 1000 * 60; // To convert to Milliseconds
+                if (iTime >= Int32.MaxValue || iTime <= Int32.MinValue)
+                {
+                    WallpaperCycleTime = 0;
+                }
+                else
+                {
+                    WallpaperCycleTime = (Int32)iTime;
+                }
+            }
+        }
+
+        public Int32 ChangingTimeMilliSeconds
+        {
+            get { return WallpaperCycleTime; }
+            set { WallpaperCycleTime = value; }
         }
 
         public Boolean WallpaperSubDirectory
         {
             get { return WallpaperSubDir; }
             set { WallpaperSubDir = value; }
+        }
+
+        public Boolean CycleTimeEnabled
+        {
+            get { return cycleTimeEnabled; }
+            set { cycleTimeEnabled = value; }
         }
 
         public UserData()
@@ -96,8 +125,9 @@ namespace WallpaperCycler
             SmallImageStyle = WallpaperStyle.Center;
             SpecialImageStyle = WallpaperStyle.Tile;
             SpecialImageSize = 128;
-            WallpaperCycleTime = 128;
+            WallpaperCycleTime = 0;
             WallpaperSubDir = false;
+            cycleTimeEnabled = false;
         }
 
         public static UserData LoadUserData()
@@ -121,7 +151,17 @@ namespace WallpaperCycler
                 File.AppendAllText(ErrorLogPath, "\r\n" + Date + " " + Time + "\t" + ex.Message);
             }
 
-            if (loadingData == null) loadingData = new UserData();
+            if (loadingData == null)
+            {
+                loadingData = new UserData();
+            }
+            else
+            {
+                while(loadingData.lastWallpaperPath.Count > 1)
+                {
+                    loadingData.lastWallpaperPath.RemoveAt(0);
+                }
+            }
             return loadingData;
         }
 

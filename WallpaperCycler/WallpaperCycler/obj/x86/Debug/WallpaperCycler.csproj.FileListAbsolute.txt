@@ -12,3 +12,17 @@ C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\Wallpa
 C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.TrustInfo.xml
 C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.exe.manifest
 C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.application
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\bin\Debug\WallpaperCycler.exe.manifest
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\bin\Debug\WallpaperCycler.application
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\bin\Debug\WallpaperCycler.exe
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\bin\Debug\WallpaperCycler.pdb
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.MainForm.resources
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.Properties.Resources.resources
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.TrustInfo.xml
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.exe.manifest
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.application
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.exe
+C:\Documents and Settings\moeaun\My Documents\Visual Studio 2010\Projects\WallpaperCycler\WallpaperCycler\WallpaperCycler\obj\x86\Debug\WallpaperCycler.pdb
