@@ -114,13 +114,16 @@ namespace WallpaperCycler
 
         private void SetTimer()
         {
-            if (chkCycleTime.Checked && txtCycleTime.Text != "0")
+            Int32 i = 0;
+            Int32.TryParse(txtCycleTime.Text,out i);
+            if (chkCycleTime.Checked && i != 0)
             {
                 BeginInvoke(new Action(() =>
                 {
                     txtCycleTime.DataBindings["Text"].WriteValue();
+                    Timer.Stop();
                     Timer.Interval = User.ChangingTimeMilliSeconds;
-                    Timer.Enabled = true;
+                    Timer.Start();
                 }));
             }
             else
